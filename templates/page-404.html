@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block head %}
+<head>
+	<meta charset="utf-8">
+	<title>{% block title %}{{ page.title }}{% endblock title %}</title>
+	<meta name="description" content="Creative &amp; Modern Agency HTML5 Template">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--Favicon-->
+	<link rel="icon" type="image/svg" href="{{ get_url(path="assets/img/root/favicon.svg") }}">
+	<!--Framework-->
+	<link rel="stylesheet" href="{{ get_url(path="assets/css/framework/bootstrap.min.css") }}">
+	<!--Fonts-->
+	<link rel="stylesheet" href="{{ get_url(path="assets/fonts/Swansea/style.css") }}">
+	<link rel="stylesheet" href="{{ get_url(path="assets/fonts/Skape/style.css") }}">
+	<link rel="stylesheet" href="{{ get_url(path="assets/fonts/Socicons/socicon.css") }}">
+	<!--Plugins-->
+	<link rel="stylesheet" href="{{ get_url(path="assets/css/vlt-plugins.min.css") }}">
+	<!--Style-->
+	<link rel="stylesheet" href="{{ get_url(path="assets/css/vlt-main.min.css") }}">
+	<!--Custom-->
+	<link rel="stylesheet" href="{{ get_url(path="assets/css/custom.css") }}">
+</head>
+{% endblock head %}
+	
+{% block main %}
+<!--Main-->
+<main class="vlt-main">
+	<!--Page content-->
+	<div class="vlt-page-content">
+		<!--Section page 404-->
+		<section>
+			<!--Particle image--><img class="vlt-particle" src="assets/img/root/404-red-shape.png" data-animation-name="fadeInRight" alt="" style="position: absolute; bottom: 0; right: 0; max-width: 214px;" loading="lazy">
+			<div class="vlt-gap-120"></div>
+			<article class="vlt-page vlt-page--404">
+				<div class="container">
+					<div class="row d-flex align-items-center">
+						<div class="col-md-6">
+							<!--Particle image--><img class="vlt-particle" src="assets/img/root/404-plus-pattern.png" data-animation-name="fadeInLeft" alt="" style="position: absolute; bottom: -120px; right: -50px; max-width: 413px; --animate-delay: .5s;" loading="lazy">
+							<!--Animated block-->
+							<div class="vlt-animated-block" data-aos="fade" data-aos-delay="0">
+								<!--Simple image-->
+								<div class="vlt-simple-image">
+									<div class="vlt-simple-image__mask" data-aos="image-mask-animation" data-aos-delay="0">
+										<div class="inside"></div>
+									</div><img src="assets/img/404-image.png" alt="" loading="lazy">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="vlt-gap-60--sm"></div>
+							<!--Animated block-->
+							<div class="vlt-animated-block" data-aos="fade" data-aos-delay="100">
+								<div class="text-center">
+									<div class="has-black-color">
+										<!--Stroke text-->
+										<div class="vlt-stroke-text vlt-stroke-text--lg">404
+										</div>
+									</div>
+									<div class="vlt-gap-10"></div>
+									<h2>Page not found.</h2>
+									<div class="vlt-gap-10"></div>
+									<p class="fz-3">The page you were looking for could not be found.</p>
+									<div class="vlt-gap-60"></div>
+									<!--Button--><a class="vlt-btn vlt-btn--secondary vlt-btn--md" href="index.html" target="_self">Back to Home</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+			<div class="vlt-gap-120"></div>
+		</section>
+	</div>
+</main>
+{% endblock main %}       

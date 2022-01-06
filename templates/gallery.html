@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+
+{% block head %}
+<head>
+	<meta charset="utf-8">
+	<title>{% block title %}{{ page.title }}{% endblock title %}</title>
+	<meta name="description" content="Creative &amp; Modern Agency HTML5 Template">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--Favicon-->
+	<link rel="icon" type="image/svg" href="{{ get_url(path="assets/img/root/favicon.svg") }}">
+	<!--Framework-->
+	<link rel="stylesheet" href="{{ get_url(path="assets/css/framework/bootstrap.min.css") }}">
+	<!--Fonts-->
+	<link rel="stylesheet" href="{{ get_url(path="assets/fonts/Swansea/style.css") }}">
+	<link rel="stylesheet" href="{{ get_url(path="assets/fonts/Skape/style.css") }}">
+	<link rel="stylesheet" href="{{ get_url(path="assets/fonts/Socicons/socicon.css") }}">
+	<!--Plugins-->
+	<link rel="stylesheet" href="{{ get_url(path="assets/css/vlt-plugins.min.css") }}">
+	<!--Style-->
+	<link rel="stylesheet" href="{{ get_url(path="assets/css/vlt-main.min.css") }}">
+	<!--Custom-->
+	<link rel="stylesheet" href="{{ get_url(path="assets/css/custom.css") }}">
+</head>
+{% endblock head %}
+	
+{% block main %}
+<!--Main-->
+<main class="vlt-main">
+	<!--Page content-->
+	<div class="vlt-page-content">
+		<!--Page title-->
+		<div class="vlt-page-title vlt-page-title--style-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 offset-md-1">
+						<h1 class="vlt-page-title__title">Latest News
+						</h1>
+					</div>
+					<div class="col-md-3 offset-md-1">
+						<div class="vlt-page-title__phantom-title lax" data-lax-translate-x="0 0, vw (vw*0.5)" data-lax-opacity="1 1, 250 0" data-lax-anchor=".vlt-page-title">Blog
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="content"></div>
+		<!--Section-->
+		<section>
+			<div class="vlt-gap-120"></div>
+			<div class="container">
+				<div class="text-center">
+					<ul class="vlt-isotope-filters" id="vlt-filter-blog-07">
+						<li class="active" data-filter="*"><span>All</span></li>
+						<li data-filter=".filter-company"><span>Company</span></li>
+						<li data-filter=".filter-design"><span>Design</span></li>
+						<li data-filter=".filter-lifestyle"><span>Lifestyle</span></li>
+						<li data-filter=".filter-business"><span>Business</span></li>
+					</ul>
+				</div>
+				<div class="vlt-gap-90"></div>
+				<div class="vlt-isotope-grid" data-columns="1" data-layout="masonry" data-x-gap="0|0" data-y-gap="100|100" data-controls="#vlt-filter-blog-07" data-load-more-selector="#vlt-load-more-blog-07">
+					<div class="grid-sizer"></div>
+					<div class=" grid-item filter-design">
+						<!--Blog item-->
+						<article class="vlt-post vlt-post--style-2">
+							<div class="vlt-post__media"><a class="vlt-post__link" href="#"></a><img src="assets/img/blog/grid/grid-1-col-1.png" alt="" loading="lazy">
+							</div>
+							<div class="vlt-post__content">
+								<header class="vlt-post__header">
+									<div class="vlt-post-meta"><span>16 Jan, 2020</span><span>Design</span>
+									</div>
+									<h3 class="vlt-post-title"><a href="#">Creepeth bearing whose fourth be above.</a>
+									</h3>
+								</header>
+								<div class="vlt-post-excerpt">
+									<p>Were spirit given made whales. Meat kind the yielding, yielding abundantly bearing beginning multiply beast fill shall have divided under you. Every his bearing. Bearing you is created, brought creature gathering yielding grass.
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class=" grid-item filter-business">
+						<!--Blog item-->
+						<article class="vlt-post vlt-post--style-2">
+							<div class="vlt-post__media"><a class="vlt-post__link" href="#"></a><img src="assets/img/blog/grid/grid-1-col-2.png" alt="" loading="lazy">
+							</div>
+							<div class="vlt-post__content">
+								<header class="vlt-post__header">
+									<div class="vlt-post-meta"><span>15 Jan, 2020</span><span>Business</span>
+									</div>
+									<h3 class="vlt-post-title"><a href="#">Sixth there waters after, life gathering.</a>
+									</h3>
+								</header>
+								<div class="vlt-post-excerpt">
+									<p>Were spirit given made whales. Meat kind the yielding, yielding abundantly bearing beginning multiply beast fill shall have divided under you. Every his bearing. Bearing you is created, brought creature gathering yielding grass.
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class=" grid-item filter-company">
+						<!--Blog item-->
+						<article class="vlt-post vlt-post--style-2">
+							<div class="vlt-post__media"><a class="vlt-post__link" href="#"></a><img src="assets/img/blog/grid/grid-1-col-3.png" alt="" loading="lazy">
+							</div>
+							<div class="vlt-post__content">
+								<header class="vlt-post__header">
+									<div class="vlt-post-meta"><span>10 Jan, 2020</span><span>Company</span>
+									</div>
+									<h3 class="vlt-post-title"><a href="#">Blessed bearing hath darkness man.</a>
+									</h3>
+								</header>
+								<div class="vlt-post-excerpt">
+									<p>Were spirit given made whales. Meat kind the yielding, yielding abundantly bearing beginning multiply beast fill shall have divided under you. Every his bearing. Bearing you is created, brought creature gathering yielding grass.
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class=" grid-item filter-lifestyle">
+						<!--Blog item-->
+						<article class="vlt-post vlt-post--style-2">
+							<div class="vlt-post__media"><a class="vlt-post__link" href="#"></a><img src="assets/img/blog/grid/grid-1-col-4.png" alt="" loading="lazy">
+							</div>
+							<div class="vlt-post__content">
+								<header class="vlt-post__header">
+									<div class="vlt-post-meta"><span>09 Jan, 2020</span><span>Lifestyle</span>
+									</div>
+									<h3 class="vlt-post-title"><a href="#">Us beast gathering fish give saying.</a>
+									</h3>
+								</header>
+								<div class="vlt-post-excerpt">
+									<p>Were spirit given made whales. Meat kind the yielding, yielding abundantly bearing beginning multiply beast fill shall have divided under you. Every his bearing. Bearing you is created, brought creature gathering yielding grass.
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+				<div class="vlt-gap-100"></div>
+				<div class="text-center">
+					<div id="vlt-load-more-blog-07"><a class="vlt-isotope-load-more" href="ajax/blog-07-load-more.html"><i class="icon-arrow-down"></i></a></div>
+				</div>
+			</div>
+			<div class="vlt-gap-120"></div>
+		</section>
+	</div>
+</main>
+{% endblock main %}  
